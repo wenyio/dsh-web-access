@@ -1,0 +1,36 @@
+{
+  "name": "dsh-web-access",
+  "version": "0.3.0",
+  "description": "Open the current DeepSeek Harness instance in a local browser",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.cjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "locale", "cordis.patch.yml", "README.md", "LICENSE"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenyio/dsh-web-access.git"
+  },
+  "homepage": "https://github.com/wenyio/dsh-web-access#readme",
+  "bugs": "https://github.com/wenyio/dsh-web-access/issues",
+  "author": "Wenyio",
+  "keywords": ["dsh-plugin", "deepseek-harness", "web-access"],
+  "engines": {
+    "dsh": ">=0.2.2-rc.2 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml",
+      "listedByDefault": true
+    },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-plugin-manager", "@deepseek-ai/dsh-client-locale"]
+    }
+  },
+  "license": "MIT"
+}

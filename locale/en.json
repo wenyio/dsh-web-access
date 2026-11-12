@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "DSH Web Access",
+    "description": "Open this Harness instance in a local browser with its existing workspaces, sessions, and plugins."
+  },
+  "settings": {
+    "title": "Web access settings",
+    "address": "Browser address",
+    "loadingAddress": "Loading browser address…",
+    "unavailableAddress": "The browser address is currently unavailable.",
+    "openBrowser": "Open in browser",
+    "autoLogin": "Automatic local sign-in",
+    "autoLoginOn": "Programs and devices that can reach this local port can sign in automatically.",
+    "autoLoginOff": "Select Open in browser to sign in from a new browser. Existing sessions stay signed in.",
+    "port": "Web port",
+    "save": "Save",
+    "readFailed": "Couldn't load web access settings.",
+    "openFailed": "Couldn't open the browser. Try again.",
+    "autoLoginSaved": "Sign-in settings updated.",
+    "autoLoginSaveFailed": "Couldn't save sign-in settings. Try again.",
+    "portInUse": "This port is in use. Choose another port.",
+    "portSaved": "Web port updated.",
+    "portSaveFailed": "Couldn't apply the new port. Check the port setting.",
+    "EADDRINUSE": "The web port is in use. Choose another port and save.",
+    "LISTEN_FAILED": "Couldn't start web access. Check the port setting and save again.",
+    "CONFIG_UNREADABLE": "Couldn't read the saved web port. Save the port setting again.",
+    "UNSUPPORTED_HOST": "Web access requires a local Harness Host using HTTP."
+  },
+  "authorization": {
+    "title": "Harness web authorization",
+    "heading": "Sign in to Harness Web",
+    "instructions": "In Harness Desktop, go to Plugins → DSH Web Access and select Open in browser."
+  }
+}
